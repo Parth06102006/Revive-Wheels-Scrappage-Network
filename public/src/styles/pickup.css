@@ -129,6 +129,12 @@ header {
     list-style: none;
 }
 
+#scrap-calculator,#valid-buffer
+{
+    display: none;
+}
+
+
 /* Process section */
 .process-section {
     border: 2px solid rgb(234, 234, 234);

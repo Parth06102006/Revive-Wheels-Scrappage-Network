@@ -42,9 +42,9 @@
             </h2>
             <p>Select from the below options</p>
             <div class="hero-buttons">
-                <button class="green-button">Do it Yourself</button>
-                <button class="green-button">We will help You</button>
-            </div>
+              <button id="doItYourselfButton" class="green-button">Do it Yourself</button>
+              <button id="weWillHelpYouButton" class="green-button">We will help You</button>
+          </div>
         </div>
     
         <div class="hero-video">
@@ -61,10 +61,22 @@
                 <img src="./images/aed2efa2-796f-4333-8bf5-325e6c5a6605-123-(1)-(1)-(1)-(1)-(1)-(1)-(1)-(1)-(1)-(1)-(1).png" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-8">
-                <div class="card-body">
+                <div class="card-body" id="getValueBody">
                   <h5 class="card-title">Scrap Value Estimator</h5>
                   <p class="card-text">Bason on weight,condition and valuable parts</p>
-                  <button type="button">Get the Value</button>
+                  <button type="button" id="getValue">Get the Value</button>
+                </div>
+                <div id="valid-buffer" class="card-body">
+                  <video playsinline autoplay loop muted loop height="200px" width="200px" style="
+                    border-radius: 400px;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+                    ">
+                    <source src="./images/Tick Mark.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div id="scrap-calculator" class="card-body">
+                  <div><b>Price</b> ₹0-0</div>
+                  <p style="opacity:0.6">The estimated price is subject to change based on a physical evaluation. <br/>It is calculated using the provided details, and the final amount is contingent on the vehicle's condition.</p>
                 </div>
                 <div class="card text-bg-light mb-3 change-card">
                     <div class="card-body">
@@ -186,5 +198,6 @@
         </div>
     </div>
     <div class="footer-spacer"></div>
+    <script src="./src/scripts/pickup.js"></script>
 </body>
 </html>

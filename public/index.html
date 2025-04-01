@@ -32,7 +32,7 @@
     </header>
 
     <div class="form-container" style="margin: 20px auto; max-width: 900px; padding: 20px; border: 2px solid #ddd; border-radius: 10px;">
-        <form action="pickup.html">
+        <form action="" id="form-details">
             <div class="form-content" style="display: flex; justify-content: space-between; gap: 20px;">
                 <!-- Left Section - User Details -->
                 <div class="user-details" style="flex: 1; padding: 10px; border: 1px solid rgb(200, 200, 200); border-radius: 5px;">
@@ -63,20 +63,20 @@
                 <input id="vehicleNo" type="text" placeholder="Enter Vehicle No." style="width: 100%; padding: 8px;">
 
                 <label for="vehicleRC">Vehicle RC</label>
-                <input id="vehicleRC" type="file" style="width: 100%; padding: 8px;">
+                <input id="vehicleRC" type="file" style="width: 100%; padding: 8px;" accept=".jpeg, .png,.jpg, .pdf">
 
                 <label for="vehicleModel">Vehicle Model</label>
                 <input id="vehicleModel" type="text" placeholder="Enter Vehicle Model" style="width: 100%; padding: 8px;">
 
                 <label for="vehiclePhotos">Vehicle Photos</label>
-                <input id="vehiclePhotos" type="file" style="width: 100%; padding: 8px;">
+                <input id="vehiclePhotos" type="file" style="width: 100%; padding: 8px;" multiple accept=".jpeg, .png,.jpg,">
 
                 <label for="scrapApplication">Application Copy</label>
-                <input id="scrapApplication" type="file" style="width: 100%; padding: 8px;">
+                <input id="scrapApplication" type="file" style="width: 100%; padding: 8px;" accept=".jpeg, .png,.jpg, .pdf">
             </div>
 
             <div style="display: flex; justify-content: center; margin-top: 15px;">
-                <button type="submit" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px;">Submit the Form</button>
+                <button type="submit" id="submitButton" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px;">Submit the Form</button>
             </div>
         </form>
     </div>
@@ -84,6 +84,6 @@
     <footer style="text-align: center; padding: 10px; background: #f1f1f1; margin-top: 20px;">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit.
     </footer>
-
+    <script src="./src/scripts/script.js"></script>
 </body>
 </html>
